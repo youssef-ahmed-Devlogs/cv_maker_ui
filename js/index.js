@@ -6,9 +6,11 @@ let currentMode = localStorage.getItem("current_mode")
 
 const cssColors = {
   lightColor: "#fff",
-  darkColor: "#061621",
+  darkColor: "#0e3048",
   blueLightColor: "#eff6ff",
   blueDarkColor: "#1a73e842",
+  bodyColor: "#eff6ff",
+  bodyDarkColor: "#0e3048f2",
 };
 
 changeIcon(darkModeToggle);
@@ -46,12 +48,16 @@ function changeColors() {
     setCssVar("--light-color", cssColors.darkColor);
     setCssVar("--dark-color", cssColors.lightColor);
     setCssVar("--blue-light-color", cssColors.blueDarkColor);
+    setCssVar("--body-color", cssColors.bodyDarkColor);
+
     headerLogo.src = "../images/logo/logo-light.png";
     footerLogo.src = "../images/logo/logo-dark.png";
   } else {
     setCssVar("--light-color", cssColors.lightColor);
     setCssVar("--dark-color", cssColors.darkColor);
     setCssVar("--blue-light-color", cssColors.blueLightColor);
+    setCssVar("--body-color", cssColors.bodyColor);
+
     headerLogo.src = "../images/logo/logo-dark.png";
     footerLogo.src = "../images/logo/logo-light.png";
   }

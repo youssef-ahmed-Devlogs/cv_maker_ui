@@ -19,11 +19,13 @@
   --second-color: #ffca2a;
 
   --light-color: #fff;
-  --dark-color: #061621;
+  --dark-color: #0e3048;
   --gray-color: #d3d9dd;
 
   --blue-light-color: #eff6ff;
   --blue-dark-color: #1a73e842;
+
+  --body-color: #eff6ff;
 
   /* HOVER COLORS */
   --primary-hover: #1967d2;
@@ -71,7 +73,7 @@
 body {
   font-family: "Cairo", sans-serif;
   margin-top: var(--header-height);
-  background-color: var(--blue-light-color);
+  background-color: var(--body-color);
 }
 
 a {
@@ -88,6 +90,46 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.card {
+  border-color: var(--gray-line-color);
+}
+
+.text-warning {
+  color: #ffcc00 !important;
+}
+
+.bg-warning {
+  background-color: #ffcc00 !important;
+}
+
+.bg-warning-opacity {
+  background-color: #fff7d768 !important;
+}
+
+.text-success {
+  color: #10b981 !important;
+}
+
+.bg-success {
+  background-color: #10b981 !important;
+}
+
+.bg-success-opacity {
+  background-color: #dbfff37e !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-primary-opacity {
+  background-color: #ddedff7c !important;
 }
 
 /* ====================== END GLOBAL ====================== */
@@ -344,15 +386,57 @@ footer {
 
 /* ====================== END FOOTER ====================== */
 
-/* ***************************** START MAIN CONTENT ***************************** */
+/* ******************************************* START MAIN CONTENT ******************************************* */
 main {
+  min-height: calc(100vh - var(--header-height));
+}
+
+main section {
+  padding: 50px 0;
 }
 
 /* ====================== START HOME PAGE ====================== */
 
-/*  ======================START Paid Subscription ====================== */
+/*  ==== START STATISTICS SECTION ==== */
 
-/*  ======================End  Paid Subscription ====================== */
+section.statistics-section .card {
+  /* border: none; */
+  position: relative;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+section.statistics-section .card .icon {
+  position: absolute;
+  left: 5px;
+  bottom: -32px;
+  z-index: -1;
+  font-size: calc(var(--h1-size) * 2.5);
+  opacity: 0.7;
+}
+
+section.statistics-section .card .text {
+  font-size: var(--h7-size);
+  font-weight: bold;
+  color: var(--dark-color);
+  margin-bottom: -12px;
+}
+
+section.statistics-section .card .count {
+  font-weight: bold;
+  font-size: calc(var(--h1-size) * 2);
+  color: var(--dark-color);
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  section.statistics-section .card .count {
+    font-size: calc(var(--h1-size) * 1.5);
+    line-height: 1.1;
+  }
+}
+
+/*  ==== END STATISTICS SECTION ==== */
 
 /* ====================== END HOME PAGE ====================== */
 
@@ -360,4 +444,4 @@ main {
 
 /* ====================== END MY CV PAGE  ====================== */
 
-/* ***************************** END MAIN CONTENT ***************************** */
+/* ******************************************* END MAIN CONTENT ******************************************* */
