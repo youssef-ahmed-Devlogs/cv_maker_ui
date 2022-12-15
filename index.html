@@ -14,19 +14,127 @@
     <!-- ====================== START HEADER ====================== -->
 
     <header>
-      <div class="header-content">
-        <a href="#" class="logo h2 m-0 fw-bold text-light"> LOGO </a>
+      <nav class="navbar fixed-top p-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="./images/logo/logo-dark.png" alt="" />
+          </a>
 
-        <ul class="header-links">
-          <li class="header-item">
-            <a href="#" class="header-link">My CVs</a>
-          </li>
+          <div class="desktop-links d-flex align-items-center">
+            <div class="language-toggle">
+              <img
+                src="./images/logo/ar.jpg"
+                alt="site language"
+                title="lang"
+              />
+            </div>
 
-          <li class="header-item">
-            <a href="#" class="header-link">Account</a>
-          </li>
-        </ul>
-      </div>
+            <div class="dark-mode-toggle">
+              <i class="fas fa-moon icon"></i>
+            </div>
+
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center flex-direction-row flex-row"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="far fa-copy"></i>
+                  My CVs
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="icon"
+                    src="https://picsum.photos/300/300"
+                    alt=""
+                  />
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-user"></i>
+                      My Account
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-door-closed"></i>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <button
+              class="navbar-toggler d-none ms-1"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <div
+            class="mobile-links offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="far fa-copy"></i>
+                    My CVs
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img
+                      class="icon"
+                      src="https://picsum.photos/300/300"
+                      alt=""
+                    />
+                    My Account
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-door-closed"></i>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- ====================== END HEADER ====================== -->
@@ -35,13 +143,13 @@
 
     <main class="home-page">
       <div class="container">
-        <!-- ====================== START Paid Subscription ====================== -->
-        <section></section>
-        <!-- ====================== End Paid Subscription ====================== -->
+        <!-- ====================== START STATISTICS SECTION ====================== -->
 
-        <!-- ====================== START Paid Subscription ====================== -->
-        <section></section>
-        <!-- ====================== End Paid Subscription ====================== -->
+        <section class="statistics-section">
+          <h1>STATISTICS SECTION</h1>
+        </section>
+
+        <!-- ====================== END STATISTICS SECTION ====================== -->
       </div>
     </main>
 
@@ -50,11 +158,29 @@
     <!-- ====================== START FOOTER ====================== -->
 
     <footer>
-      <div class="footer-content">
-        <p class="footer-text text-center m-0 text-light">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius,
-          temporibus. &copy; 2022
-        </p>
+      <div class="container-fluid">
+        <div class="top-footer">
+          <div class="row align-items-center">
+            <div class="col-xl-4 mb-3">
+              <a href="/" class="logo">
+                <img src="./images//logo/logo-light.png" alt="" />
+              </a>
+            </div>
+            <div class="col-xl-8">
+              <ul class="links d-flex align-items-center gap-4">
+                <a href="#">My Account</a>
+                <a href="#">Templates</a>
+                <a href="#">Subscription</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <p class="footer-text text-center m-0">&copy; CV MAKER 2022</p>
+        </div>
       </div>
     </footer>
 
