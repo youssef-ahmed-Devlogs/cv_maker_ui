@@ -1,0 +1,127 @@
+/* ====================== START GLOBAL ====================== */
+
+/* FONTS */
+@font-face {
+  font-family: "Cairo";
+  src: url("../siteFonts/Cairo/Cairo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("../siteFonts/Cairo/Cairo-ExtraBold.ttf");
+  font-weight: bold;
+}
+
+/* VARIABLES */
+:root {
+  /* COLORS */
+  --primary-color: #1a73e8;
+  --second-color: #ffca2a;
+  --light-color: #fff;
+  --dark-color: #061621;
+  --gray-color: #b1bfc9;
+  --blue-gray-color: #eff6ff;
+
+  /* HOVER COLORS */
+  --primary-hover: #1967d2;
+
+  /* LINES COLORS */
+  --gray-line-color: #8094a261;
+
+  /* FONT SIZES */
+  --h1-size: 40px;
+  --h2-size: 32px;
+  --h3-size: 28px;
+  --h4-size: 24px;
+  --h5-size: 20px;
+  --h6-size: 16px;
+  --h7-size: 14px;
+  --h8-size: 12px;
+
+  /* ANIMATIONS */
+  --transition-5: ease-in-out 0.5s;
+
+  /* SHADOW */
+  --shadow-1: 0 10px 0 #06162165;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+a:hover {
+  color: var(--dark-color);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* ====================== END GLOBAL ====================== */
+
+/* ====================== START HEADER ====================== */
+
+header {
+  background-color: var(--primary-color);
+}
+
+header .header-content {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header-content .header-links {
+  display: flex;
+  gap: 10px;
+}
+
+header .header-content .header-link {
+  color: var(--light-color);
+  font-size: var(--h6-size);
+  padding: 10px;
+}
+
+/* ====================== END HEADER ====================== */
+
+/* ====================== START FOOTER ====================== */
+
+footer {
+  background-color: var(--gray-color);
+}
+
+footer .footer-content {
+  padding: 10px 0;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* ====================== END FOOTER ====================== */
+
+/* ***************************** START MAIN CONTENT ***************************** */
+main {
+}
+
+/* ====================== START HOME PAGE ====================== */
+
+/*  ======================START Paid Subscription ====================== */
+
+/*  ======================End  Paid Subscription ====================== */
+
+/* ====================== END HOME PAGE ====================== */
+
+/* ====================== START MY CV PAGE ====================== */
+
+/* ====================== END MY CV PAGE  ====================== */
+
+/* ***************************** END MAIN CONTENT ***************************** */
