@@ -300,8 +300,8 @@ header .mobile-links .offcanvas-header .offcanvas-title {
 header .language-toggle,
 header .dark-mode-toggle {
   height: calc(var(--header-height) - 15px);
-  width: 50px;
-  border-radius: 5px;
+  width: 30px;
+  /* border-radius: 5px; */
   cursor: pointer;
   font-size: var(--h5-size);
   display: flex;
@@ -314,19 +314,7 @@ header .dark-mode-toggle {
 @media (max-width: 600px) {
   header .language-toggle,
   header .dark-mode-toggle {
-    width: 40px;
-  }
-}
-
-header .language-toggle:hover,
-header .dark-mode-toggle:hover {
-  background-color: var(--blue-light-color);
-}
-
-@media (max-width: 600px) {
-  header .language-toggle:hover,
-  header .dark-mode-toggle:hover {
-    background-color: transparent !important;
+    width: 30px;
   }
 }
 
@@ -400,7 +388,6 @@ main section {
 /*  ==== START STATISTICS SECTION ==== */
 
 section.statistics-section .card {
-  /* border: none; */
   position: relative;
   overflow: hidden;
   padding: 10px 0;
