@@ -145,6 +145,7 @@ ul {
 
 .card {
   border-color: var(--gray-line-color);
+  background-color: var(--light-color);
 }
 
 .text-warning {
@@ -215,6 +216,12 @@ ul {
   background-color: var(--primary-hover);
   border-color: var(--primary-hover);
   box-shadow: -1px 0px 13px 0px rgb(26 115 232 / 44%) !important;
+}
+
+.page-title {
+  font-weight: bold;
+  font-size: var(--h1-size);
+  color: var(--dark-color);
 }
 
 /* ====================== END GLOBAL ====================== */
@@ -680,6 +687,32 @@ section.statistics-section .card .count {
 /*  ==== END Different Conbinations Section ==== */
 
 /* ====================== END HOME PAGE ====================== */
+
+/* ====================== START Frequent Section ====================== */
+.frequent-section .card .question {
+  font-weight: bold;
+  color: var(--dark-color);
+  font-size: var(--h3-size);
+}
+
+.frequent-section .card .answer {
+  font-size: var(--h7-size);
+  color: var(--dark-color);
+  line-height: 1.8;
+}
+
+.frequent-section .card ul {
+  list-style: unset;
+  font-size: var(--h7-size);
+  color: var(--dark-color);
+  line-height: 1.8;
+}
+
+.frequent-section .card .description {
+  color: var(--dark-color);
+  font-size: var(--h7-size);
+}
+/* ====================== END Frequent Section ====================== */
 
 /* ====================== START MY CV PAGE ====================== */
 

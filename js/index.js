@@ -31,6 +31,7 @@ function changeMode() {
 
 function changeIcon(button) {
   const icon = button.querySelector(".icon");
+
   if (currentMode == "light") {
     icon.classList.add("fa-moon");
     icon.classList.remove("fa-sun");
