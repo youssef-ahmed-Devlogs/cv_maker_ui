@@ -96,11 +96,29 @@ ul {
   border-color: var(--gray-line-color);
   font-size: var(--h7-size);
   padding: 15px 10px;
+  background-color: var(--light-color);
+  color: var(--dark-color);
 }
 
 .form-control:focus {
   box-shadow: -1px 0px 14px 0px rgb(26 115 232 / 14%) !important;
   border-color: var(--gray-line-color);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.modal .modal-content {
+  background-color: var(--light-color);
+}
+
+.modal .modal-content .modal-title {
+  color: var(--dark-color);
+}
+
+.modal .modal-content .btn-close {
+  color: var(--dark-color);
+  background-image: none;
+  font-size: var(--h3-size);
 }
 
 .card {
