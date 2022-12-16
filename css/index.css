@@ -76,6 +76,27 @@ body {
   background-color: var(--body-color);
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--gray-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-hover);
+}
+
 a {
   display: block;
   text-decoration: none;
@@ -113,6 +134,7 @@ ul {
 
 .modal .modal-content .modal-title {
   color: var(--dark-color);
+  font-size: var(--h5-size) !important;
 }
 
 .modal .modal-content .btn-close {

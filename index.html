@@ -55,7 +55,7 @@
                     src="https://picsum.photos/300/300"
                     alt=""
                   />
-                  Account
+                  Youssef Ahmed
                 </a>
                 <ul class="dropdown-menu">
                   <li>
@@ -207,22 +207,22 @@
           aria-hidden="true"
         >
           <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header align-items-center">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                  Create New Account
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close pt-0"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form>
+            <form>
+              <div class="modal-content">
+                <div class="modal-header align-items-center">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Create New Account
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close pt-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
                   <div class="form-item mb-2">
                     <input
                       type="text"
@@ -258,14 +258,20 @@
                       placeholder="Password Confirm"
                     />
                   </div>
-                </form>
+
+                  <div class="form-item mb-2">
+                    <select type="password" class="form-control" name="gender">
+                      <option value="" disabled selected>Gender</option>
+                      <option value="">Male</option>
+                      <option value="">Female</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-xl btn-success w-100">Register</button>
+                </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-xl btn-success w-100">
-                  Register
-                </button>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </section>
