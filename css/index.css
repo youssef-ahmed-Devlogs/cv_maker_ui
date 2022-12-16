@@ -92,6 +92,17 @@ ul {
   list-style: none;
 }
 
+.form-control {
+  border-color: var(--gray-line-color);
+  font-size: var(--h7-size);
+  padding: 15px 10px;
+}
+
+.form-control:focus {
+  box-shadow: -1px 0px 14px 0px rgb(26 115 232 / 14%) !important;
+  border-color: var(--gray-line-color);
+}
+
 .card {
   border-color: var(--gray-line-color);
 }
@@ -140,9 +151,9 @@ ul {
 }
 
 .btn-xl {
-  padding: 10px 60px;
-  border-radius: 14px;
-  font-size: var(--h4-size);
+  padding: 9px 50px;
+  border-radius: 10px;
+  font-size: var(--h5-size);
 }
 
 .btn-success {
@@ -424,6 +435,28 @@ main section {
 }
 
 /* ====================== START HOME PAGE ====================== */
+
+/* ==== START LOGIN SECTION ==== */
+
+.login-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--header-height));
+}
+
+.login-section .login-title {
+  font-size: var(--h1-size);
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+}
+
+.login-section hr {
+  color: var(--gray-line-color);
+}
+
+/* ==== END LOGIN SECTION ==== */
 
 /* ==== START hero section ==== */
 .hero-section h1 {
