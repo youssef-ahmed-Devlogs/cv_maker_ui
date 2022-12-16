@@ -2,13 +2,13 @@
 
 /* FONTS */
 @font-face {
-  font-family: "Cairo";
-  src: url("../siteFonts/Cairo/Cairo-Regular.ttf");
+  font-family: "Poppins";
+  src: url("../siteFonts/Poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Cairo";
-  src: url("../siteFonts/Cairo/Cairo-ExtraBold.ttf");
+  font-family: "Poppins";
+  src: url("../siteFonts/Poppins/Poppins-Bold.ttf");
   font-weight: bold;
 }
 
@@ -71,7 +71,7 @@
 }
 
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: var(--header-height);
   background-color: var(--body-color);
 }
@@ -130,6 +130,40 @@ ul {
 
 .bg-primary-opacity {
   background-color: #ddedff7c !important;
+}
+
+.btn {
+  padding: 8px 15px;
+  font-weight: bold;
+  transition: var(--transition-5);
+  font-size: var(--h7-size);
+}
+
+.btn-xl {
+  padding: 10px 60px;
+  border-radius: 14px;
+  font-size: var(--h4-size);
+}
+
+.btn-success {
+  background-color: #10b981;
+  border-color: #10b981;
+}
+
+.btn-success:hover {
+  background-color: #08875c;
+  border-color: #08875c;
+}
+
+.btn-primary {
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  box-shadow: -1px 0px 13px 0px rgb(26 115 232 / 44%) !important;
 }
 
 /* ====================== END GLOBAL ====================== */
@@ -383,7 +417,127 @@ main section {
   padding: 50px 0;
 }
 
+@media (max-width: 600px) {
+  main section {
+    padding: 30px 0;
+  }
+}
+
 /* ====================== START HOME PAGE ====================== */
+
+/* ==== START hero section ==== */
+.hero-section h1 {
+  font-weight: 700;
+  font-size: calc(var(--h1-size) + 8px);
+  color: var(--dark-color);
+}
+
+.hero-section .col p {
+  font-size: var(--h4-size);
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--dark-color);
+  padding: 10px 0;
+}
+
+.hero-section .image {
+  width: 450px;
+}
+
+.hero-section .image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 991px) {
+  .hero-section .image {
+    width: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  .col {
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-section h1 {
+    font-size: var(--h3-size);
+  }
+  .hero-section p {
+    font-size: var(--h7-size);
+  }
+  .hero-section .image {
+    padding-top: 20px;
+    width: 300px;
+    margin: auto;
+  }
+}
+
+/* ==== end hero section ==== */
+
+/* ==== START Advantages section ==== */
+.advantages-section .adv-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.advantages-section .adv-card .adv-icon {
+  border-radius: 10px;
+  border: 3px solid;
+  font-size: var(--h2-size);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .advantages-section .adv-card .adv-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.advantages-section .adv-card .adv-icon.blue {
+  color: #3b82f6;
+  border-color: #b5d5fc;
+  background: #e4eefa;
+}
+
+.advantages-section .adv-card .adv-icon.green {
+  color: #10b981;
+  border-color: #9ff1cb;
+  background: #e2fff1;
+}
+
+.advantages-section .adv-card .adv-icon.yellow {
+  color: #f6a926;
+  border-color: #ffe684;
+  background: #faf5e1;
+}
+
+.advantages-section .adv-card h3 {
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: var(--h4-size);
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.advantages-section .adv-card p {
+  color: var(--dark-color);
+  font-size: var(--h7-size);
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* ==== END Advantages section ==== */
 
 /*  ==== START STATISTICS SECTION ==== */
 
@@ -424,6 +578,33 @@ section.statistics-section .card .count {
 }
 
 /*  ==== END STATISTICS SECTION ==== */
+
+/*  ==== START Different Conbinations Section ==== */
+.different-conbinations-section {
+  background-color: var(--light-color);
+}
+
+.different-conbinations-section .conbinations-text {
+  font-size: calc(var(--h5-size) - 2px);
+  margin-bottom: 5px;
+  opacity: 0.8;
+  color: var(--dark-color);
+}
+
+.different-conbinations-section .conbinations-title {
+  font-weight: bold;
+  width: 220px;
+  font-size: var(--h2-size);
+  color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+  .different-conbinations-section .conbinations-image img {
+    width: 250px !important;
+  }
+}
+
+/*  ==== END Different Conbinations Section ==== */
 
 /* ====================== END HOME PAGE ====================== */
 
