@@ -69,3 +69,17 @@ function setCssVar(property, value) {
 }
 
 // ====================== END DARK MODE ======================
+
+// ====================== START CHANGE LANGUAGE ======================
+const languageToggle = document.querySelector(".language-toggle");
+
+languageToggle.addEventListener("click", function () {
+  if (document.body.dir == "rtl") {
+    document.body.dir = "ltr";
+    languageToggle.querySelector("img").src = "./images/logo/ar.jpg";
+  } else {
+    document.body.dir = "rtl";
+    languageToggle.querySelector("img").src = "./images/logo/en.jpg";
+  }
+});
+// ====================== END CHANGE LANGUAGE ======================

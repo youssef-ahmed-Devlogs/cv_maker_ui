@@ -287,6 +287,7 @@ ul {
 header .navbar {
   background-color: var(--light-color);
   height: var(--header-height);
+  box-shadow: 0 0 10px var(--gray-line-color);
 }
 
 header .navbar-brand,
