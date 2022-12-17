@@ -222,12 +222,62 @@ ul {
   font-weight: bold;
   font-size: var(--h1-size);
   color: var(--dark-color);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: var(--h2-size);
+    margin-bottom: 10px;
+  }
 }
 
 .section-title {
   font-weight: bold;
   font-size: var(--h2-size);
   color: var(--dark-color);
+}
+
+.accordion .accordion-button {
+  font-size: var(--h6-size);
+  background-color: var(--light-color);
+}
+
+.accordion .accordion-button .text {
+  color: var(--dark-color);
+  font-size: var(--h7-size);
+}
+
+.accordion .accordion-button .icon {
+  position: absolute;
+  right: 15px;
+  color: var(--dark-color);
+  font-size: var(--h7-size);
+}
+
+.accordion .accordion-button.collapsed .icon {
+  transform: rotate(-180deg);
+}
+
+.accordion .accordion-body {
+  font-size: var(--h6-size);
+  background-color: var(--body-color);
+  color: var(--dark-color);
+  font-size: var(--h7-size);
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  background-image: none;
+}
+
+.accordion-item {
+  border-color: var(--gray-line-color);
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  border-bottom: 1px solid var(--gray-line-color);
 }
 
 /* ====================== END GLOBAL ====================== */
