@@ -496,8 +496,8 @@ footer {
 
 @media (max-width: 600px) {
   .top-footer .links {
-    gap: 0 !important;
-    justify-content: space-between;
+    gap: 8px !important;
+    justify-content: center;
   }
 }
 
