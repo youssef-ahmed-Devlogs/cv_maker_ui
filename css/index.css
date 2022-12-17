@@ -224,6 +224,12 @@ ul {
   color: var(--dark-color);
 }
 
+.section-title {
+  font-weight: bold;
+  font-size: var(--h2-size);
+  color: var(--dark-color);
+}
+
 /* ====================== END GLOBAL ====================== */
 
 /* ====================== START HEADER ====================== */
@@ -558,6 +564,10 @@ main section {
 /* ==== end hero section ==== */
 
 /* ==== START Advantages section ==== */
+.advantages-section {
+  background-color: var(--light-color);
+}
+
 .advantages-section .adv-card {
   display: flex;
   align-items: center;
@@ -685,6 +695,72 @@ section.statistics-section .card .count {
 }
 
 /*  ==== END Different Conbinations Section ==== */
+
+/* ==== START SUBSCRIPTION SECTION ==== */
+
+.subscription-section .card {
+  min-height: 480px;
+}
+
+.subscription-section .card-head .card-title {
+  font-size: var(--h4-size);
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.subscription-section .card-price .price .before-discount {
+  color: var(--dark-color);
+  opacity: 0.7;
+  text-decoration: line-through;
+  font-size: var(--h7-size);
+}
+
+.subscription-section .card-price .price .after-discount {
+  font-size: var(--h7-size);
+  padding: 4px 8px;
+  border-radius: 20px;
+}
+
+.subscription-section .card-price .price .dollar {
+  font-size: var(--h5-size);
+  color: var(--dark-color);
+}
+
+.subscription-section .card-price .price .dollar span {
+  font-size: calc(var(--h1-size) + 8px);
+  font-weight: bold;
+  display: block;
+}
+
+.subscription-section .card-price .subscripe-btn {
+  width: 60%;
+}
+
+.subscription-section .card-list {
+  border-top: 2px solid var(--gray-line-color);
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.subscription-section .card-list .list-item {
+  color: var(--dark-color);
+  font-size: var(--h7-size);
+  line-height: 2.5;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.subscription-section .card-list .list-item .icon {
+  color: #08875c;
+  font-size: var(--h6-size);
+}
+
+.subscription-section .card-list .list-item .icon.fa-times {
+  color: #e11d58;
+}
+
+/* ==== END SUBSCRIPTION SECTION ==== */
 
 /* ====================== END HOME PAGE ====================== */
 
