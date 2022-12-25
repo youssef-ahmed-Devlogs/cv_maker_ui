@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- ====================== START HEADER ====================== -->
+
+    <header>
+      <nav class="navbar fixed-top p-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="./images/logo/logo-dark.png" alt="" />
+          </a>
+
+          <div class="desktop-links d-flex align-items-center">
+            <div class="language-toggle mx-2">
+              <img
+                src="./images/logo/ar.jpg"
+                alt="site language"
+                title="lang"
+              />
+            </div>
+
+            <div class="dark-mode-toggle mx-2">
+              <i class="fas fa-moon icon"></i>
+            </div>
+
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center flex-direction-row flex-row"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="far fa-copy"></i>
+                  My CVs
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img class="icon" src="./images/user.jpeg" alt="" />
+                  Youssef Ahmed
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-user"></i>
+                      My Account
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-door-closed"></i>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <button
+              class="navbar-toggler d-none ms-1"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <div
+            class="mobile-links offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img class="icon" src="./images/user.jpeg" alt="" />
+                    Youssef Ahmed
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="far fa-copy"></i>
+                    My CVs
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-door-closed"></i>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ====================== END HEADER ====================== -->
+
+    <!-- ====================== START MAIN CONTENT ====================== -->
+
+    <main class="download-page">
+      <div class="container">
+        <div class="actions">
+          <button id="download-button" class="btn btn-xl btn-primary">
+            Download
+          </button>
+          <select id="download-options" class="form-control">
+            <option value="png">PNG</option>
+            <option value="jpeg">JPG</option>
+            <option value="pdf">PDF</option>
+          </select>
+        </div>
+
+        <div class="template-view">
+          <h2 class="template_name">Youssef Ahmed</h2>
+
+          <h5 class="template_sec-title">Other Me</h5>
+          <p class="template_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, nemo
+            nostrum? Suscipit minima sequi accusantium atque, culpa sunt eum
+            incidunt aut omnis vel ipsum maiores debitis eveniet aliquam, eius
+            ratione. Unde quae commodi, eveniet quam voluptatibus consequuntur
+            vel inventore eaque libero voluptate voluptatum. Dicta tenetur
+            adipisci eum vitae molestiae maxime cumque accusamus voluptas
+            commodi fuga ipsum nemo culpa praesentium rerum, similique veniam
+            aliquam facere placeat, rem cupiditate quam. Nemo, animi! Laudantium
+            accusantium nihil perferendis odit ullam soluta minima, voluptas
+            amet alias eligendi vel officiis in sed ut delectus doloremque
+            maxime commodi, obcaecati, dolores adipisci suscipit repudiandae sit
+            accusamus! Consequuntur, saepe!
+          </p>
+
+          <h5 class="template_sec-title">Other Me</h5>
+          <p class="template_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, nemo
+            nostrum? Suscipit minima sequi accusantium atque, culpa sunt eum
+            incidunt aut omnis vel ipsum maiores debitis eveniet aliquam, eius
+            ratione. Unde quae commodi, eveniet quam voluptatibus consequuntur
+            vel inventore eaque libero voluptate voluptatum. Dicta tenetur
+            adipisci eum vitae molestiae maxime cumque accusamus voluptas
+            commodi fuga ipsum nemo culpa praesentium rerum, similique veniam
+            aliquam facere placeat, rem cupiditate quam. Nemo, animi! Laudantium
+            accusantium nihil perferendis odit ullam soluta minima, voluptas
+            amet alias eligendi vel officiis in sed ut delectus doloremque
+            maxime commodi, obcaecati, dolores adipisci suscipit repudiandae sit
+            accusamus! Consequuntur, saepe!
+          </p>
+
+          <h5 class="template_sec-title">Other Me</h5>
+          <p class="template_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, nemo
+            nostrum? Suscipit minima sequi accusantium atque, culpa sunt eum
+            incidunt aut omnis vel ipsum maiores debitis eveniet aliquam, eius
+            ratione. Unde quae commodi, eveniet quam voluptatibus consequuntur
+            vel inventore eaque libero voluptate voluptatum. Dicta tenetur
+            adipisci eum vitae molestiae maxime cumque accusamus voluptas
+            commodi fuga ipsum nemo culpa praesentium rerum, similique veniam
+            aliquam facere placeat, rem cupiditate quam. Nemo, animi! Laudantium
+            accusantium nihil perferendis odit ullam soluta minima, voluptas
+            amet alias eligendi vel officiis in sed ut delectus doloremque
+            maxime commodi, obcaecati, dolores adipisci suscipit repudiandae sit
+            accusamus! Consequuntur, saepe!
+          </p>
+
+          <h5 class="template_sec-title">Other Me</h5>
+          <p class="template_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, nemo
+            nostrum? Suscipit minima sequi accusantium atque, culpa sunt eum
+            incidunt aut omnis vel ipsum maiores debitis eveniet aliquam, eius
+            ratione. Unde quae commodi, eveniet quam voluptatibus consequuntur
+            vel inventore eaque libero voluptate voluptatum. Dicta tenetur
+            adipisci eum vitae molestiae maxime cumque accusamus voluptas
+            commodi fuga ipsum nemo culpa praesentium rerum, similique veniam
+            aliquam facere placeat, rem cupiditate quam. Nemo, animi! Laudantium
+            accusantium nihil perferendis odit ullam soluta minima, voluptas
+            amet alias eligendi vel officiis in sed ut delectus doloremque
+            maxime commodi, obcaecati, dolores adipisci suscipit repudiandae sit
+            accusamus! Consequuntur, saepe!
+          </p>
+
+          <h5 class="template_sec-title">Other Me</h5>
+          <p class="template_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, nemo
+            nostrum? Suscipit minima sequi accusantium atque, culpa sunt eum
+            incidunt aut omnis vel ipsum maiores debitis eveniet aliquam, eius
+            ratione. Unde quae commodi, eveniet quam voluptatibus consequuntur
+            vel inventore eaque libero voluptate voluptatum. Dicta tenetur
+            adipisci eum vitae molestiae maxime cumque accusamus voluptas
+            commodi fuga ipsum nemo culpa praesentium rerum, similique veniam
+            aliquam facere placeat, rem cupiditate quam. Nemo, animi! Laudantium
+            accusantium nihil perferendis odit ullam soluta minima, voluptas
+            amet alias eligendi vel officiis in sed ut delectus doloremque
+            maxime commodi, obcaecati, dolores adipisci suscipit repudiandae sit
+            accusamus! Consequuntur, saepe!
+          </p>
+
+          <h5 class="template_sec-title">Other Me</h5>
+          <p class="template_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, nemo
+            nostrum? Suscipit minima sequi accusantium atque, culpa sunt eum
+            incidunt aut omnis vel ipsum maiores debitis eveniet aliquam, eius
+            ratione. Unde quae commodi, eveniet quam voluptatibus consequuntur
+            vel inventore eaque libero voluptate voluptatum. Dicta tenetur
+            adipisci eum vitae molestiae maxime cumque accusamus voluptas
+            commodi fuga ipsum nemo culpa praesentium rerum, similique veniam
+            aliquam facere placeat, rem cupiditate quam. Nemo, animi! Laudantium
+            accusantium nihil perferendis odit ullam soluta minima, voluptas
+            amet alias eligendi vel officiis in sed ut delectus doloremque
+            maxime commodi, obcaecati, dolores adipisci suscipit repudiandae sit
+            accusamus! Consequuntur, saepe!
+          </p>
+
+          <h5 class="template_sec-title">Other Me</h5>
+          <p class="template_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, nemo
+            nostrum? Suscipit minima sequi accusantium atque, culpa sunt eum
+            incidunt aut omnis vel ipsum maiores debitis eveniet aliquam, eius
+            ratione. Unde quae commodi, eveniet quam voluptatibus consequuntur
+            vel inventore eaque libero voluptate voluptatum. Dicta tenetur
+            adipisci eum vitae molestiae maxime cumque accusamus voluptas
+            commodi fuga ipsum nemo culpa praesentium rerum, similique veniam
+            aliquam facere placeat, rem cupiditate quam. Nemo, animi! Laudantium
+            accusantium nihil perferendis odit ullam soluta minima, voluptas
+            amet alias eligendi vel officiis in sed ut delectus doloremque
+            maxime commodi, obcaecati, dolores adipisci suscipit repudiandae sit
+            accusamus! Consequuntur, saepe!
+          </p>
+
+          <h5 class="template_sec-title">Other Me</h5>
+          <p class="template_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, nemo
+            nostrum? Suscipit minima sequi accusantium atque, culpa sunt eum
+            incidunt aut omnis vel ipsum maiores debitis eveniet aliquam, eius
+            ratione. Unde quae commodi, eveniet quam voluptatibus consequuntur
+            vel inventore eaque libero voluptate voluptatum. Dicta tenetur
+            adipisci eum vitae molestiae maxime cumque accusamus voluptas
+            commodi fuga ipsum nemo culpa praesentium rerum, similique veniam
+            aliquam facere placeat, rem cupiditate quam. Nemo, animi! Laudantium
+            accusantium nihil perferendis odit ullam soluta minima, voluptas
+            amet alias eligendi vel officiis in sed ut delectus doloremque
+            maxime commodi, obcaecati, dolores adipisci suscipit repudiandae sit
+            accusamus! Consequuntur, saepe!
+          </p>
+
+          <h5 class="template_sec-title">Other Me</h5>
+          <p class="template_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, nemo
+            nostrum? Suscipit minima sequi accusantium atque, culpa sunt eum
+            incidunt aut omnis vel ipsum maiores debitis eveniet aliquam, eius
+            ratione. Unde quae commodi, eveniet quam voluptatibus consequuntur
+            vel inventore eaque libero voluptate voluptatum. Dicta tenetur
+            adipisci eum vitae molestiae maxime cumque accusamus voluptas
+            commodi fuga ipsum nemo culpa praesentium rerum, similique veniam
+            aliquam facere placeat, rem cupiditate quam. Nemo, animi! Laudantium
+            accusantium nihil perferendis odit ullam soluta minima, voluptas
+            amet alias eligendi vel officiis in sed ut delectus doloremque
+            maxime commodi, obcaecati, dolores adipisci suscipit repudiandae sit
+            accusamus! Consequuntur, saepe!
+          </p>
+
+          <h5 class="template_sec-title">Other Me</h5>
+          <p class="template_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, nemo
+            nostrum? Suscipit minima sequi accusantium atque, culpa sunt eum
+            incidunt aut omnis vel ipsum maiores debitis eveniet aliquam, eius
+            ratione. Unde quae commodi, eveniet quam voluptatibus consequuntur
+            vel inventore eaque libero voluptate voluptatum. Dicta tenetur
+            adipisci eum vitae molestiae maxime cumque accusamus voluptas
+            commodi fuga ipsum nemo culpa praesentium rerum, similique veniam
+            aliquam facere placeat, rem cupiditate quam. Nemo, animi! Laudantium
+            accusantium nihil perferendis odit ullam soluta minima, voluptas
+            amet alias eligendi vel officiis in sed ut delectus doloremque
+            maxime commodi, obcaecati, dolores adipisci suscipit repudiandae sit
+            accusamus! Consequuntur, saepe!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- ====================== END MAIN CONTENT ====================== -->
+
+    <!-- ====================== START FOOTER ====================== -->
+
+    <footer>
+      <div class="container-fluid">
+        <div class="top-footer">
+          <div class="row align-items-center">
+            <div class="col-xl-4 mb-3">
+              <a href="/" class="logo">
+                <img src="./images/logo/logo-light.png" alt="" />
+              </a>
+            </div>
+            <div class="col-xl-8">
+              <ul class="links d-flex align-items-center flex-wrap gap-4">
+                <a href="#">My Account</a>
+                <a href="#">Templates</a>
+                <a href="#">Subscription</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact Us</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <p class="footer-text text-center m-0">&copy; CV MAKER 2022</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================== END FOOTER ====================== -->
+
+    <!-- SCRIPT -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/html2canvas.min.js"></script>
+    <script src="./js/html2pdf.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

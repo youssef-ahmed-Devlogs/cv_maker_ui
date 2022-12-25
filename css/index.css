@@ -43,6 +43,8 @@
   --h7-size: 14px;
   --h8-size: 12px;
 
+  --template-font: 20px;
+
   /* WIDTH & HEIGHT */
   --header-height: 70px;
 
@@ -975,5 +977,58 @@ section.statistics-section .card .count {
 }
 
 /* ====================== END CREATE CV PAGE  ====================== */
+
+/* ====================== START DOWNLOAD PAGE  ====================== */
+
+.download-page {
+  margin-top: 100px;
+}
+
+.download-page .actions {
+  width: 1000px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.download-page .actions select {
+  max-width: 100px;
+}
+
+.template-view {
+  width: 800px;
+  min-height: 1102px;
+  background-color: #fff;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 50px;
+  user-select: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.template_name {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.template_sec-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.template_text {
+  font-size: 14px;
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 10px;
+}
+
+/* ====================== END DOWNLOAD PAGE  ====================== */
 
 /* ******************************************* END MAIN CONTENT ******************************************* */

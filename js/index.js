@@ -83,3 +83,43 @@ languageToggle.addEventListener("click", function () {
   }
 });
 // ====================== END CHANGE LANGUAGE ======================
+
+// ====================== START DOWNLOAD CV ======================
+const preview = document.querySelector(".template-view");
+const downloadButton = document.getElementById("download-button");
+const downloadOptions = document.getElementById("download-options");
+
+const opt = {
+  // margin: 0.5,
+  filename: "myfile.pdf",
+  image: { type: "jpeg", quality: 1 },
+  html2canvas: { scale: 4 },
+  jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+};
+
+downloadButton.addEventListener("click", () => {
+  if (downloadOptions.value !== "pdf") {
+    downloadAsImage(preview, downloadOptions.value);
+  } else {
+    html2pdf(preview, opt);
+  }
+});
+
+function downloadAsImage(preview, extension) {
+  html2canvas(preview).then((canvas) => {
+    const imageURL = canvas.toDataURL(`image/${extension}`);
+
+    const linkElement = document.createElement("a");
+    linkElement.setAttribute("href", imageURL);
+    linkElement.setAttribute(
+      "download",
+      `cv_${Math.floor(Math.random() * Math.random() * 999999999999)}`
+    );
+    linkElement.click();
+    linkElement.remove();
+  });
+}
+
+function downloadAsPDF() {}
+
+// ====================== END DOWNLOAD CV ======================
